@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    'setuptools',
+    'wheel',
+]
+
+[tool.tidypy]
+exclude = [
+    'test/.*',
+    'build/.*',
+    'dist/.*',
+]
+
+[tool.tidypy.pycodestyle]
+disabled = [
+    'W391',
+    'E731',
+]
+
+[tool.tidypy.pylint]
+disabled = [
+    'missing-docstring',
+    'trailing-newlines',
+]
+
+[tool.tidypy.pyflakes]
+disabled = [
+    'UnusedImport',
+    'ImportStarUsed',
+]
+
+[tool.tidypy.yamllint]
+disabled = [
+    'empty-lines',
+    'document-start',
+]
+
+[tool.tidypy.2to3]
+disabled = [
+    'future',
+]
+
