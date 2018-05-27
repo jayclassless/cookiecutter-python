@@ -5,11 +5,13 @@ name = "pypi"
 
 [dev-packages]
 "e1839a8" = {path = ".", editable = true}
+"coverage" = "*"
 "coveralls" = "*"
 "pytest" = "*"
+"Sphinx" = "*"
+sphinx_rtd_theme = "*"
+"tidypy" = "*"
 "twine" = "*"
 "wheel" = "*"
-"tidypy" = "*"
 
 [packages]
-

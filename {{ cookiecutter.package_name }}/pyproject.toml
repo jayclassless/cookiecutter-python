@@ -6,6 +6,7 @@ requires = [
 
 [tool.tidypy]
 exclude = [
+    'docs/source/conf.py',
     'test/.*',
     'build/.*',
     'dist/.*',
@@ -38,5 +39,13 @@ disabled = [
 [tool.tidypy.2to3]
 disabled = [
     'future',
+]
+
+[tool.tidypy.rstlint.options]
+sphinx-extensions = [
+    'sphinx.ext.autodoc',
+]
+ignore-roles = [
+    'ref',
 ]
 
